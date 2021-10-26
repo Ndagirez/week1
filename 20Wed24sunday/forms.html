@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--forms-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            FORMS
+        </title>
+        <body>
+            <h1>feedback form</h1>
+            <p>please feel the form </p>
+            <form method="post" action="http://www.domainname.com">
+              
+                <input type="hidden" name="recipient" value="domainname.com">
+                <input type="hidden" name="subject" value=" feedback form">
+                <input type="hidden" name="redirect" value="main.html">
+            <!--recieves users name-->
+                <p><label>name:
+                    <input name="name" type="text" size="25">
+                   </label>
+               </p>
+               <!--text area for commenting-->
+               <p><label>comment:<br>
+                   <textarea name= "comments" rows="4" colums="30">Enter comments</textarea>
+
+               </label>
+             
+               </p>
+               <!--enter email or password-->
+               <p><label>Emailaddress:
+                   <input name="email" type ="password" size="25">
+
+               </label>
+              </p>
+              <!--list things you liked about the site-->
+              <p>
+                  <p><strong>things you liked</strong></p>
+                  <label>site design
+                      <input name="things liked" type="checkbox" value="design">
+                  </label>
+                  <label>images
+                    <input name="things liked" type="checkbox" value="images">
+                  </label>
+                  <label>links
+                    <input name="things liked" type="checkbox" value="links">
+                  </label>
+              </p>
+              <!--difference between checkbox and radio button is that you can only choose one radio button-->
+
+              <p>
+                  <strong >how you got to our website</strong>
+
+                  <label>search engine
+                    <input name="how to search" type="radio" value="search engine"  checked>
+                </label>
+                <label>reference from a book
+                  <input name="how to search" type="radio" value="book">
+                </label>
+                <label>links
+                  <input name="how to search" type="radio" value="links">
+                </label>
+
+              </p>
+
+              <p>
+                  <lable>Rate our site:
+                      <!--list of options to choose from-->
+                      <select name ="rating">
+                          <option selected>amazing</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                      </select>
+
+                  </lable>
+              </p>
+              <input type="submit" value="submit">
+              <input type="reset" value="clear">
+
+            </form>
+        </body>
+    </head>
+</html>
